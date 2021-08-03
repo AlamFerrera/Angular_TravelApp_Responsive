@@ -8,6 +8,7 @@ import { MainComponent } from './componentes/main/main.component';
 import { AboutComponent } from './componentes/about/about.component';
 import { DiscoverComponent } from './componentes/discover/discover.component';
 import {SwiperModule} from 'swiper/angular';
+import { ExperienceComponent } from './componentes/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {SwiperModule} from 'swiper/angular';
     HeaderComponent,
     MainComponent,
     AboutComponent,
-    DiscoverComponent
+    DiscoverComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
