@@ -142,4 +142,32 @@ input{
   gap: 1.5rem;
 }
 
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  font-weight: var(--font-semi-bold);
+  transition: .3s;
+}
+
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.button--flex{
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.button--link{
+  background: none;
+  padding: 0;
+}
+
+.button--link:hover{
+  background: none;
+}
+
 
