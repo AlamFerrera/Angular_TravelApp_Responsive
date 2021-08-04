@@ -12,6 +12,8 @@ import { ExperienceComponent } from './componentes/experience/experience.compone
 import { VideoComponent } from './componentes/video/video.component';
 import { PlacesComponent } from './componentes/places/places.component';
 import { SubscribeComponent } from './componentes/subscribe/subscribe.component';
+import { SponsorComponent } from './componentes/sponsor/sponsor.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SubscribeComponent } from './componentes/subscribe/subscribe.component'
     ExperienceComponent,
     VideoComponent,
     PlacesComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    SponsorComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

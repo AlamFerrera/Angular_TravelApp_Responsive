@@ -7,9 +7,9 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  sections = document.querySelectorAll('section[id]');
   @ViewChild('header')head:ElementRef;
-  @HostListener('window:scroll', ['$event']) onWindowScroll(header){
+  @HostListener('window:scroll', ['$event']) onWindowScroll(){
     if(window.scrollY >= 100)
     {
       this.changeHeader();
@@ -21,7 +21,11 @@ export class HeaderComponent implements OnInit {
 
   changeHeader(): void {
     this.head.nativeElement.classList.add('scroll-header');
+    console.log(this.sections);
+
   }
+
+
 
   constructor() { }
 
@@ -35,7 +39,4 @@ export class HeaderComponent implements OnInit {
   hideMenu(nav:HTMLDivElement){
     nav.classList.remove('show-menu');
   }
-
-
-
 }
