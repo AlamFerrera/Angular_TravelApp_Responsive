@@ -11,6 +11,7 @@ import {SwiperModule} from 'swiper/angular';
 import { ExperienceComponent } from './componentes/experience/experience.component';
 import { VideoComponent } from './componentes/video/video.component';
 import { PlacesComponent } from './componentes/places/places.component';
+import { SubscribeComponent } from './componentes/subscribe/subscribe.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PlacesComponent } from './componentes/places/places.component';
     DiscoverComponent,
     ExperienceComponent,
     VideoComponent,
-    PlacesComponent
+    PlacesComponent,
+    SubscribeComponent
   ],
   imports: [
     BrowserModule,
