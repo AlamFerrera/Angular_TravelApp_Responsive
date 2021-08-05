@@ -37,4 +37,37 @@ width: 180px;
   transform: var(--img-scale);
 }
 
+/* Media Querys
+
+Medium devices*/
+@media screen and (min-width: 568px){
+  .about__container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .about__data, .about__title{
+    text-align: initial;
+  }
+
+  .about__title{
+    margin-bottom: var(--mb-1-5);
+  }
+
+  .about__description{
+    margin-bottom: var(--mb-2);
+  }
+}
+
+/*Large Devices
+*/
+@media screen and (min-width: 1024px){
+  .about__img-one{
+    width: 240px;
+  }
+
+  .about__img-two{
+    width: 290px;
+  }
+}
 

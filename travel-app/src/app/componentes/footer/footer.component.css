@@ -63,4 +63,18 @@
   color: var(--text-color);
 }
 
+/*Medium devices*/
+@media screen and (min-width: 568px){
+  .footer__rights{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
+/*Large Devices
+*/
+@media screen and (min-width: 1024px){
+  .footer__content{
+    justify-items: center;
+  }
+}

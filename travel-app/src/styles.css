@@ -245,7 +245,9 @@ body.dark-theme{
   font-size: var(--small-font-size);
 }
 
-/*Media Querys*/
+/*Media Querys
+Medium Devices
+*/
 @media screen and (min-width: 768px){
   body{
     margin: 0;
@@ -256,6 +258,25 @@ body.dark-theme{
   }
 }
 
+/*Large Devices
+*/
+@media screen and (min-width: 1024px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
+@media screen and (min-width: 1200px){
+  .container{
+    max-width: 1024px;
+  }
+}
 
+/*Tall Screens*/
+@media screen and (min-height: 721px){
+  body{
+    margin: 0;
+  }
+}
 

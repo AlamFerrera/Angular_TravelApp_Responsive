@@ -1,3 +1,7 @@
+.main{
+  overflow-x: hidden;
+}
+
 .home__img{
   position: absolute;
   top: 0;
@@ -86,5 +90,57 @@
   .home__info{
     width: 190px;
     padding: 1rem;
+  }
+}
+
+/*Medium devices*/
+@media screen and (min-width: 568px){
+  .home__container{
+   height: 100vh;
+   grid-template-rows: 1.8fr .5fr;
+  }
+
+  .home__data{
+    align-self: flex-end;
+  }
+
+  .home__social{
+    flex-direction: row;
+    align-self: flex-end;
+    margin-bottom: 3rem;
+    column-gap: 2.5rem;
+  }
+
+  .home__info{
+    bottom: 3rem;
+  }
+}
+
+/*Large Devices
+*/
+@media screen and (min-width: 1024px){
+  .home__container{
+    grid-template-rows: 2fr .5fr;
+  }
+
+  .home__info{
+    width: 328px;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
+
+  .home__info-title{
+    font-size: var(--normal-font-size);
+  }
+
+  .home__info-img{
+    width: 240px;
+  }
+}
+
+/*Tall Screens*/
+@media screen and (min-height: 721px){
+  .home__container, .home__img{
+    height: 640px;
   }
 }

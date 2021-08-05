@@ -33,3 +33,14 @@
   }
 }
 
+/*Large Devices
+*/
+@media screen and (min-width: 1024px){
+  .video__container{
+    grid-template-columns: .7fr;
+  }
+
+  .video__description{
+    padding: 0 8rem;
+  }
+}

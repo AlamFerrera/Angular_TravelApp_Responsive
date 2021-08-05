@@ -39,4 +39,18 @@ Medium Devices
     width: 470px;
     margin: 0 auto;
   }
+
+  .subscribe__bg{
+    background: none;
+    padding: 0;
+  }
+
+  .subscribe__container{
+    background-color: var(--first-color-second);
+    padding: 3.5rem 0;
+  }
+
+  .subscribe__input{
+    padding: 0 .5rem;
+  }
 }

@@ -89,6 +89,18 @@
   }
 }
 
+/*Large Devices
+*/
+@media screen and (min-width: 1024px){
+  .place__container{
+    gap: 3rem 2rem;
+  }
+
+  .place__card, .place__img{
+    height: 263px;
+  }
+}
+
 
 
 
