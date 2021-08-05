@@ -50,3 +50,23 @@
   overflow: var(--img-hidden);
 }
 
+/*Media Querys*/
+
+/*Small devices*/
+@media screen and (max-width: 340px){
+  .experience__content{
+    padding: 0;
+  }
+
+  .experience__overlay:nth-child(1){
+    width: 190px;
+  }
+
+  .experience__overlay:nth-child(2){
+    width: 80px;
+  }
+
+  .experience__img, .video__container{
+    padding: 0;
+  }
+}

@@ -29,3 +29,14 @@
 .subscribe__input::placeholder{
   color: var(--text-color);
 }
+
+/*Media Querys
+
+Medium Devices
+*/
+@media screen and (min-width: 568px){
+  .subscribe__form{
+    width: 470px;
+    margin: 0 auto;
+  }
+}

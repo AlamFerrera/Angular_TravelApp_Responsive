@@ -72,6 +72,23 @@
   transform: var(--img-scale);
 }
 
+/*Media Querys*/
+
+/*Small devices*/
+@media screen and (max-width: 340px){
+  .place__container{
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+}
+
+/*Medium Devices*/
+@media screen and (min-width: 568px){
+  .place__container{
+    grid-template-columns: repeat(3, max-content);
+  }
+}
+
 
 
 

@@ -22,4 +22,14 @@
   font-size: 1.2rem;
 }
 
+/*Media Querys*/
+
+/*Medium Devices*/
+@media screen and (min-width: 568px){
+  .video__container{
+    display: grid;
+    grid-template-columns: .6fr;
+    justify-content: center;
+  }
+}
 
