@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -8,28 +8,35 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
 
 
 export class MainComponent implements OnInit {
-
-
-  @ViewChild('header')head:ElementRef;
+  sections;
   @HostListener('window:scroll', ['$event']) onWindowScroll(){
-    let sections = document.querySelectorAll("section");
-    const scrollY = window.pageYOffset;
+    window.addEventListener('scroll', this.scroll);
+  }
 
-    sections.forEach(current => {
+  constructor() {
+  }
+
+  ngOnInit(): void {
+
+  }
+
+  scroll(){
+    this.sections = document.querySelectorAll("section[id]");
+    const scrollY = window.pageYOffset;
+    this.sections.forEach((current):any => {
+
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 50;
         let sectionID = current.getAttribute('id');
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if((scrollY > sectionTop) && (scrollY <= sectionTop + sectionHeight) ){
           document.querySelector('.nav__menu a[href*=' + sectionID + ']').classList.add('active-link');
         }
+        else{
+          document.querySelector('.nav__menu a[href*=' + sectionID + ']').classList.remove('active-link');
+        }
     });
-
   }
 
-  constructor() {}
-
-  ngOnInit(): void {
-  }
 
 }

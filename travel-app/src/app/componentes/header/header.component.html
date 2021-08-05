@@ -5,7 +5,7 @@
     <div class="nav__menu" id="nav__menu" #nav>
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="#" class="nav__link active-link" (click)="hideMenu(nav)">Inicio</a>
+          <a href="#home" class="nav__link" (click)="hideMenu(nav)">Inicio</a>
         </li>
         <li class="nav__item">
           <a href="#about" class="nav__link" (click)="hideMenu(nav)">Acerca de</a>
@@ -17,6 +17,12 @@
           <a href="#place" class="nav__link" (click)="hideMenu(nav)">Lugares</a>
         </li>
       </ul>
+
+      <!--Dark mode-->
+      <div class="nav__dark">
+        <span class="change-theme-name">Modo Oscuro</span>
+        <i class="ri-moon-line change-theme" id="theme-button" #themeButton (click)="changeTheme(themeButton)"></i>
+      </div>
 
       <i class="ri-close-line nav__close" id="nav-close" (click)="hideMenu(nav)"></i>
     </div>
